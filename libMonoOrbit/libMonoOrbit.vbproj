@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{810EB35F-BC1C-44E1-A4F8-FF4A3185BBAF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>libMonoOrbit</RootNamespace>
+    <AssemblyName>libMonoOrbit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <DefineTrace>false</DefineTrace>
+    <DefineDebug>false</DefineDebug>
+    <ConsolePause>false</ConsolePause>
+    <AdditionalParameters>
+    </AdditionalParameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <ConsolePause>false</ConsolePause>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <AdditionalParameters>
+    </AdditionalParameters>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Folder Include="LibOrbit\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LibOrbit\Class1.vb" />
+    <Compile Include="LibOrbit\Dump.designer.vb" />
+    <Compile Include="LibOrbit\Dump.vb" />
+    <Compile Include="LibOrbit\Resource1.Designer.vb" />
+    <Compile Include="LibOrbit\ViewUi.vb" />
+    <Compile Include="LibOrbit\kk_movDlForUser.vb" />
+    <Compile Include="LibOrbit\myOrbit.vb" />
+    <Compile Include="LibOrbit\My Project\Application.Designer.vb" />
+    <Compile Include="LibOrbit\My Project\AssemblyInfo.vb" />
+    <Compile Include="LibOrbit\My Project\Resources.Designer.vb" />
+    <Compile Include="LibOrbit\My Project\Settings.Designer.vb" />
+    <Compile Include="LibOrbit\Utility\EvalTool.vb" />
+    <Compile Include="LibOrbit\Utility\utilFiddlerCtrl.vb" />
+    <Compile Include="LibOrbit\core\Orbit-V.vb" />
+    <Compile Include="LibOrbit\core\Complex\n_getflv.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LibOrbit\Dump.resx" />
+    <None Include="LibOrbit\FiddlerCore4.dll" />
+    <None Include="LibOrbit\Image1.png" />
+    <None Include="LibOrbit\Resource1.resx" />
+    <None Include="LibOrbit\packages.config" />
+    <None Include="LibOrbit\My Project\Application.myapp" />
+    <None Include="LibOrbit\My Project\Resources.resx" />
+    <None Include="LibOrbit\My Project\Settings.settings" />
+    <None Include="LibOrbit\Resources\109_AllAnnotations_Help_16x16_72.png" />
+    <None Include="LibOrbit\Resources\109_AllAnnotations_Info_24x24_72.png" />
+    <None Include="LibOrbit\Resources\Image1.png" />
+  </ItemGroup>
+</Project>
